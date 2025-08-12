@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+
+.btn {
+  margin: 60px;
+}
+
+button {
+  background-color: rgb(31, 103, 171);
+  width: 150px;
+  height: 50px;
+  margin-left: 12px;
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+  font-size: 18px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(20, 84, 144);
+}
+
+#toast-box {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  position: relative;
+  width: 400px;
+  height: 80px;
+  background-color: #fff;
+  font-weight: 500;
+  margin: 15px 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 25px 50px -10px,
+    rgba(0, 0, 0, 0.3) 0px 15px 30px -15px,
+    rgba(10, 37, 64, 0.35) 0px -1px 3px 0px inset;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transform: translateX(100%);
+  animation: moveleft 0.15s linear forwards;
+}
+
+@keyframes moveleft {
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+.toast i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+
+.error i {
+  color: red;
+}
+
+.invalid i {
+  color: orange;
+}
+
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: green;
+  animation: anim 6s linear forwards;
+}
+
+@keyframes anim {
+    100%{
+        width: 0;
+    }
+}
+
+.toast.error::after{
+    background-color: red;
+}
+.toast.invalid::after{
+    background-color: orange;
+}

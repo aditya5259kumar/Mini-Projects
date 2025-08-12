@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  display: block;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.container {
+  width: 350px;
+  margin: 60px auto;
+  border-radius: 1px;
+}
+
+.login-box {
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 10px;
+  padding: 2px 40px 25px;
+}
+
+.login-box #logo {
+  height: 52px;
+  width: 175px;
+  margin: 45px;
+}
+
+.login-box input {
+  width: 268px;
+  height: 37px;
+  font-size: 12px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 6.5px;
+  padding: 0 6px;
+}
+
+#pswd {
+  position: relative;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  width: 268px;
+  height: 37px;
+}
+
+#pswd input {
+  background-color: transparent;
+  border: none;
+  width: 212px;
+  height: 37px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#pswd span {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#pswd span:hover {
+  color: #777777;
+}
+
+.login-box input::placeholder {
+  color: #737373;
+  font-size: 12px;
+}
+
+.login-box button {
+  padding: 7px 16px;
+  height: 32px;
+  width: 268px;
+  background-color: #0095f6;
+  color: #fff;
+  transform: all 0.3s;
+  border-radius: 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #1877f2;
+}
+
+.login-box #or {
+  margin: 20px;
+}
+
+.login-box #or p {
+  font-weight: 600;
+  color: #737373;
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+}
+
+.login-box #or p::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  width: 107px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.login-box #or p::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: -18px;
+  width: 107px;
+  height: 1px;
+  background-color: #dbdbdb;
+}
+
+.login-box #fb {
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.login-box #fb p {
+  font-size: 14px;
+  color: #0095f6;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.login-box i {
+  color: #0095f6;
+  font-size: 18px;
+  margin: 4px 8px 0 0;
+}
+
+.login-box #forget {
+  font-weight: 600;
+  font-size: 14px;
+  color: #393939;
+  margin: 20px 73px;
+  cursor: pointer;
+}
+
+.login-box #forget:hover {
+  color: #777777;
+}
+
+.singup-box {
+  border: 1px solid #dbdbdb;
+  padding: 20px 0;
+}
+
+.singup-box p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.singup-box span {
+  font-size: 14px;
+  color: #0095f6;
+  font-weight: 600;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.container #getapp p {
+  text-align: center;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+.getit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#getapp img {
+  cursor: pointer;
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #30cfd0, #330867);
+}
+
+.container {
+  max-width: 80%;
+  width: 700px;
+  margin: 110px auto;
+  padding: 30px 0px;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 54px;
+  margin-bottom: 30px;
+}
+
+.container p {
+  color: #dadada;
+  font-size: 18px;
+}
+
+.date-container {
+  background-color: #ccdbdc46;
+  padding: 45px;
+  margin: 40px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.date-container #date {
+  flex: 1;
+  color: #626262;
+  background-color: #fff;
+  padding: 14px 20px;
+  margin-right: 14px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+.date-container #date::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background-size: 30px;
+  background-position: calc(100% - 10px);
+}
+
+.date-container #btn {
+  background-color: #00a4da;
+  color: #fff;
+  font-weight: 500;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.date-container #btn:hover {
+  background-color: #0e8ab4;
+  color: #fff;
+}
+
+#result {
+  color: #fff;
+}
+
+#result span {
+  color: yellow;
+  font-size: 19px;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 550px) {
+  .container h1 {
+    font-size: 45px;
+  }
+
+  .date-container #date {
+    padding: 10px 16px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .date-container #btn {
+    font-weight: 500;
+    padding: 11px 26px;
+    font-size: 16px;
+  }
+
+  .date-container {
+    padding: 30px;
+    margin: 30px 0;
+  }
+}
