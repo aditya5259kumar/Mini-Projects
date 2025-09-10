@@ -35,4 +35,4 @@ Click on any project name to see it live (**hosted on GitHub Pages**).
 - Event handling  
 - Form validation  
 - API integration  
-- Local storage & etc. 
+- Local storage & etc.
